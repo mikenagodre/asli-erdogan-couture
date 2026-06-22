@@ -1,0 +1,89 @@
+---
+layout: base.njk
+title: "İletişim ve Randevu | Aslı Erdoğan Couture"
+description: "Aslı Erdoğan Couture ile randevu alın ya da iletişime geçin."
+nav: iletisim
+permalink: iletisim.html
+---
+<section class="page-hero">
+  <div class="container">
+    <span class="hero-kicker">İletişim</span>
+    <h1>Randevu Alın, Tasarımınızı Konuşalım</h1>
+    <p>Atölyeyi ziyaret etmeden önce randevu almanızı öneririz; böylece size ayrılan zamanda kumaş ve tasarım seçeneklerine birlikte odaklanabiliriz.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+
+    <div>
+      <div class="contact-info-item">
+        <div>
+          <div class="label">Adres</div>
+          <div class="value">[Atölye adresi eklenecek]</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div>
+          <div class="label">Telefon</div>
+          <div class="value">[Telefon numarası eklenecek]</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div>
+          <div class="label">E posta</div>
+          <div class="value">[E posta adresi eklenecek]</div>
+        </div>
+      </div>
+      <div class="contact-info-item">
+        <div>
+          <div class="label">Çalışma Saatleri</div>
+          <div class="value">[Çalışma saatleri eklenecek]</div>
+        </div>
+      </div>
+
+      <div class="hero-actions" style="margin-top: 1.5rem;">
+        <a href="mailto:info@example.com" class="btn btn-outline">E Posta Gönder</a>
+        <a href="https://wa.me/90000000000" class="btn btn-outline">WhatsApp</a>
+      </div>
+      <p class="form-note" style="margin-top:1rem;">
+        Yukarıdaki e posta ve WhatsApp adresleri geçicidir; gerçek bilgiler eklendiğinde güncellenecek.
+      </p>
+    </div>
+
+    <div>
+      <!--
+        NOT: Bu form şu an sadece görsel olarak hazır; GitHub Pages statik
+        barındırma kullandığı için kendi başına e posta gönderemez. Formun
+        gerçekten çalışması için action alanına bir form servisinin (örn.
+        kendi sunucunuz, ya da Formspree benzeri bir servis) adresini
+        eklemek gerekiyor. Bu konuyu birlikte değerlendirebiliriz.
+      -->
+      <form class="contact-form" onsubmit="return false;">
+        <div>
+          <label for="ad-soyad">Ad Soyad</label>
+          <input type="text" id="ad-soyad" name="ad-soyad" placeholder="Adınız ve soyadınız" required />
+        </div>
+        <div>
+          <label for="telefon">Telefon</label>
+          <input type="tel" id="telefon" name="telefon" placeholder="0 (5xx) xxx xx xx" required />
+        </div>
+        <div>
+          <label for="konu">İlgilendiğiniz Hizmet</label>
+          <select id="konu" name="konu">
+            <option>Gece Kıyafeti</option>
+            <option>Özel Gelinlik</option>
+            <option>Abiye</option>
+            <option>Diğer</option>
+          </select>
+        </div>
+        <div>
+          <label for="mesaj">Mesajınız</label>
+          <textarea id="mesaj" name="mesaj" rows="4" placeholder="Aklınızdaki tasarımı kısaca anlatabilirsiniz"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="justify-self:start;">Gönder</button>
+      </form>
+    </div>
+
+  </div>
+</section>

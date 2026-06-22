@@ -1,0 +1,16 @@
+<header class="header">
+  <div class="container navbar">
+    <a href="index.html" class="brand">
+      <!-- Logo görseli hazır olduğunda bu span'i <img src="assets/img/logo.png" alt="Aslı Erdoğan Couture"> ile değiştir -->
+      <span class="brand-mark"></span>
+      <span class="brand-name">Aslı Erdoğan<span>Couture Atölyesi</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" {% if nav == "ana-sayfa" %}class="active"{% endif %}>Ana Sayfa</a>
+      <a href="koleksiyon.html" {% if nav == "koleksiyon" %}class="active"{% endif %}>Koleksiyon</a>
+      <a href="hakkimizda.html" {% if nav == "hakkimizda" %}class="active"{% endif %}>Hakkımızda</a>
+      <a href="iletisim.html" {% if nav == "iletisim" %}class="active"{% endif %}>İletişim</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menüyü aç" aria-expanded="false">☰</button>
+  </div>
+</header>
